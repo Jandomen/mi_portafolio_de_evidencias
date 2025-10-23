@@ -8,7 +8,7 @@ import {
 import {
   SiTypescript, SiNextdotjs, SiKubernetes, SiGo,
   SiTailwindcss, SiMongodb, SiMysql, SiPostgresql,
-  SiExpress, SiPostman
+  SiExpress, SiPostman, SiPrisma
 } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 
@@ -47,6 +47,7 @@ export default function Technologies() {
       items: [
         { name: "MySQL", icon: <SiMysql size={40} color="#4479a1" /> },
         { name: "MongoDB", icon: <SiMongodb size={40} color="#47a248" /> },
+        { name: "Prisma", icon: <SiPrisma size={40} color="#2D3748" /> },
       ],
     },
     {
@@ -61,7 +62,6 @@ export default function Technologies() {
 
   return (
     <motion.section className="py-20 px-6 bg-gray-900 text-white">
-
       <h2 className="text-4xl font-bold text-center mb-12 text-neon-pink drop-shadow-lg">Tecnologías que manejo</h2>
       {categories.map((category, i) => (
         <div key={i} className="mb-12">
