@@ -8,16 +8,14 @@ export default function ScrollButtons() {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.warn(`No se encontró la sección con id: ${id}`);
     }
   };
 
   const buttons = [
-    { id: "inicio", icon: <FaHome />, label: "Inicio", color: "from-purple-600 to-pink-500" },
-    { id: "tecnologias", icon: <FaCode />, label: "Tecnologías", color: "from-blue-600 to-cyan-400" },
-    { id: "proyectos", icon: <FaFolderOpen />, label: "Proyectos", color: "from-green-500 to-emerald-400" },
-    { id: "contacto", icon: <FaEnvelope />, label: "Contacto", color: "from-yellow-500 to-orange-400" },
+    { id: "inicio", icon: <FaHome />, label: "Inicio" },
+    { id: "tecnologias", icon: <FaCode />, label: "Tecnologías" },
+    { id: "proyectos", icon: <FaFolderOpen />, label: "Proyectos" },
+    { id: "contacto", icon: <FaEnvelope />, label: "Contacto" },
   ];
 
   return (
@@ -26,14 +24,13 @@ export default function ScrollButtons() {
         <motion.button
           key={index}
           onClick={() => scrollToSection(btn.id)}
-          whileHover={{ scale: 1.15, boxShadow: "0 0 20px rgba(255,255,255,0.4)" }}
-          whileTap={{ scale: 0.95 }}
-          className={`p-3 rounded-full bg-gradient-to-r ${btn.color} text-white shadow-lg hover:opacity-90 transition relative group`}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="group relative p-3 rounded-full bg-slate-800 text-slate-300 border border-slate-700 hover:text-cyan-400 hover:border-cyan-500/50 hover:bg-slate-700 transition-all shadow-lg"
           aria-label={btn.label}
         >
           {btn.icon}
-          {/* Tooltip */}
-          <span className="absolute right-full mr-3 px-2 py-1 text-sm bg-black/70 rounded-md opacity-0 group-hover:opacity-100 transition text-white whitespace-nowrap">
+          <span className="absolute right-full mr-3 px-3 py-1 text-sm bg-slate-800 text-slate-200 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-slate-700">
             {btn.label}
           </span>
         </motion.button>

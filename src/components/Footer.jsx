@@ -1,82 +1,82 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaFacebook, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart } from "react-icons/fa";
 
-// Animation variants for the footer
-const footerVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      ease: "easeOut",
-    },
+const socialLinks = [
+  {
+    name: "GitHub",
+    href: "https://github.com/jandomen",
+    icon: <FaGithub size={20} />,
   },
-};
-
-// Animation variants for social icons
-const iconVariants = {
-  hover: {
-    scale: 1.2,
-    rotate: 5,
-    transition: { duration: 0.3 },
+  {
+    name: "LinkedIn",
+    href: "https://linkedin.com/in/alejandro-serrano-teran",
+    icon: <FaLinkedin size={20} />,
   },
-};
+  {
+    name: "Email",
+    href: "mailto:alquizor8@gmail.com",
+    icon: <FaEnvelope size={20} />,
+  },
+];
 
 export default function Footer() {
   return (
-    <motion.footer
-      className="py-12 px-6 bg-gray-900 text-gray-300 text-center flex flex-col items-center justify-center w-full"
-      initial="hidden"
-      animate="visible"
-      variants={footerVariants}
-    >
-      {/* Copyright Text */}
-      <p className="text-sm mb-4 md:text-base">
-        &copy; {new Date().getFullYear()} Alejandro Serrano Teran. Todos los derechos reservados.
-      </p>
+    <footer id="contacto" className="py-16 px-6 bg-slate-950">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <span className="gradient-text">Trabajemos juntos</span>
+          </h2>
+          <p className="text-slate-400 max-w-xl mx-auto mb-8">
+            ¿Tienes un proyecto en mente? No dudes en contactarme. 
+            Estoy disponible para colaboraciones y oportunidades profesionales.
+          </p>
+          
+          <a
+            href="mailto:alquizor8@gmail.com"
+            className="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full font-semibold text-white shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all hover:scale-105"
+          >
+            Enviar mensaje
+          </a>
+        </motion.div>
 
-      {/* Social Links with Icons */}
-      <div className="flex space-x-6 mb-4">
-        <motion.a
-          href="https://github.com/jandomen"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-300 hover:text-neon-pink transition-colors duration-300"
-          variants={iconVariants}
-          whileHover="hover"
-          aria-label="GitHub Profile"
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="flex justify-center gap-6 mb-8"
         >
-          <FaGithub className="w-6 h-6 md:w-8 md:h-8" />
-        </motion.a>
-        <motion.a
-          href="https://web.facebook.com/alejandroserranoteran"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-gray-300 hover:text-neon-pink transition-colors duration-300"
-          variants={iconVariants}
-          whileHover="hover"
-          aria-label="Facebook Profile"
-        >
-          <FaFacebook className="w-6 h-6 md:w-8 md:h-8" />
-        </motion.a>
-        <motion.a
-          href="mailto:alquizor8@gmail.com"
-          className="text-gray-300 hover:text-neon-pink transition-colors duration-300"
-          variants={iconVariants}
-          whileHover="hover"
-          aria-label="Email Contact"
-        >
-          <FaEnvelope className="w-6 h-6 md:w-8 md:h-8" />
-        </motion.a>
+          {socialLinks.map((social, index) => (
+            <motion.a
+              key={social.name}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1, y: -3 }}
+              className="p-3 rounded-full bg-slate-800 text-slate-400 hover:text-cyan-400 hover:bg-slate-700 transition-all border border-slate-700 hover:border-cyan-500/30"
+              aria-label={social.name}
+            >
+              {social.icon}
+            </motion.a>
+          ))}
+        </motion.div>
+
+        <div className="text-center pt-8 border-t border-slate-800">
+          <p className="text-slate-500 text-sm flex items-center justify-center gap-2">
+            © {new Date().getFullYear()} Alejandro Serrano Teran. 
+            <span className="flex items-center gap-1">
+              Hecho con <FaHeart className="text-pink-500" size={12} /> 
+            </span>
+          </p>
+        </div>
       </div>
-
-      {/* Contact Email */}
-      <p className="text-sm md:text-base">
-        Contacto: <a href="mailto:alquizor8@gmail.com" className="text-neon-pink hover:underline">alquizor8@gmail.com</a>
-      </p>
-    </motion.footer>
+    </footer>
   );
 }

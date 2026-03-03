@@ -6,7 +6,7 @@ import ScrollButtons from "../components/ScrollButtons";
 
 export default function Home() {
   return (
-    <main className="bg-gray-900 text-white relative scroll-smooth">
+    <main className="bg-slate-950 text-white min-h-screen scroll-smooth">
       <section id="inicio">
         <Hero />
       </section>
