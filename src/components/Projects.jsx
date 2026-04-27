@@ -5,11 +5,46 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "JandoClip",
-    link: "https://jando-clip.vercel.app",
-    desc: "Portafolio de videos de edición profesional",
-    category: "Portafolio",
-    tech: ["Next.js", "React", "Tailwind"],
+    title: "Jandochat",
+    link: "https://jandochat.vercel.app",
+    desc: "Chat en tiempo real",
+    category: "Chat",
+    tech: ["React", "Socket.io", "Express"],
+  },
+  {
+    title: "Bromichat",
+    link: "https://bromichat.vercel.app",
+    desc: "Frontend de chat en tiempo real",
+    category: "Chat",
+    tech: ["React", "Socket.io", "Node.js"],
+  },
+  {
+    title: "JandoMoon",
+    link: "https://jandomoon.vercel.app",
+    desc: "Juego interactivo que trata de ir a la luna",
+    category: "Juego",
+    tech: ["Vite", "React", "Canvas API"],
+  },
+  {
+    title: "Hormiruta",
+    link: "https://hormiruta.vercel.app",
+    desc: "App para optimización y gestión de rutas",
+    category: "Logística",
+    tech: ["Next.js", "React", "Maps API", "PostgreSQL"],
+  },
+  {
+    title: "JandoLive",
+    link: "https://jandolive.vercel.app",
+    desc: "Video bidireccional con WebRTC",
+    category: "Video",
+    tech: ["React", "WebRTC", "Socket.io"],
+  },
+  {
+    title: "Jandrogen",
+    link: "https://jandrogen.vercel.app",
+    desc: "Tienda e-commerce para generadores de hidrógeno",
+    category: "E-commerce",
+    tech: ["Vite", "React", "Tailwind", "Stripe"],
   },
   {
     title: "JandoTube",
@@ -17,6 +52,13 @@ const projects = [
     desc: "Plataforma tipo YouTube",
     category: "Portafolio",
     tech: ["Next.js", "React", "MongoDB"],
+  },
+  {
+    title: "JandoClip",
+    link: "https://jando-clip.vercel.app",
+    desc: "Portafolio de videos de edición profesional",
+    category: "Portafolio",
+    tech: ["Next.js", "React", "Tailwind"],
   },
   {
     title: "JandoShop",
@@ -33,20 +75,6 @@ const projects = [
     tech: ["Next.js", "React", "Prisma"],
   },
   {
-    title: "BromiChat",
-    link: "https://bromichat.vercel.app",
-    desc: "Frontend de chat en tiempo real",
-    category: "Chat",
-    tech: ["React", "Socket.io", "Node.js"],
-  },
-  {
-    title: "JandoChat",
-    link: "https://jandochat.vercel.app",
-    desc: "Chat en tiempo real",
-    category: "Chat",
-    tech: ["React", "Socket.io", "Express"],
-  },
-  {
     title: "JandiBot",
     link: "https://jandibot.vercel.app",
     desc: "Interfaz de chatbot con IA",
@@ -61,13 +89,6 @@ const projects = [
     tech: ["React", "Solidity", "Ethers.js"],
   },
   {
-    title: "JandoLive",
-    link: "https://jandolive.vercel.app",
-    desc: "Video bidireccional con WebRTC",
-    category: "Video",
-    tech: ["React", "WebRTC", "Socket.io"],
-  },
-  {
     title: "ZenFlow",
     link: "https://zenflow-one.vercel.app",
     desc: "Landing page moderna",
@@ -80,27 +101,6 @@ const projects = [
     desc: "Web de restaurante",
     category: "Landing",
     tech: ["React", "Tailwind"],
-  },
-  {
-    title: "Hormiruta",
-    link: "https://hormiruta.vercel.app",
-    desc: "App para optimización y gestión de rutas",
-    category: "Logística",
-    tech: ["Next.js", "React", "Maps API", "PostgreSQL"],
-  },
-  {
-    title: "Jandrogen",
-    link: "https://jandrogen.vercel.app",
-    desc: "Tienda e-commerce para generadores de hidrógeno",
-    category: "E-commerce",
-    tech: ["Vite", "React", "Tailwind", "Stripe"],
-  },
-  {
-    title: "JandoMoon",
-    link: "https://jandomoon.vercel.app",
-    desc: "Juego interactivo tipo arcade",
-    category: "Juego",
-    tech: ["Vite", "React", "Canvas API"],
   },
 ];
 
@@ -151,7 +151,7 @@ export default function Projects() {
                 className={`group relative p-6 rounded-2xl bg-slate-800/50 border ${colors.border} hover:bg-slate-800 transition-all duration-300 flex flex-col`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${colors.bg} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl`} />
-                
+
                 <div className="relative z-10">
                   <div className="flex items-start justify-between mb-3">
                     <span className={`text-xs font-medium px-3 py-1 rounded-full ${colors.bg} ${colors.text} border ${colors.border}`}>

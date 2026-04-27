@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHome, FaCode, FaFolderOpen, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaCode, FaFolderOpen, FaEnvelope, FaBriefcase } from "react-icons/fa";
 
 export default function ScrollButtons() {
   const scrollToSection = (id) => {
@@ -14,6 +14,7 @@ export default function ScrollButtons() {
   const buttons = [
     { id: "inicio", icon: <FaHome />, label: "Inicio" },
     { id: "tecnologias", icon: <FaCode />, label: "Tecnologías" },
+    { id: "experiencia", icon: <FaBriefcase />, label: "Experiencia" },
     { id: "proyectos", icon: <FaFolderOpen />, label: "Proyectos" },
     { id: "contacto", icon: <FaEnvelope />, label: "Contacto" },
   ];
