@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaBriefcase } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiJavascript } from "react-icons/si";
+import { FaReact, FaNodeJs, FaBriefcase, FaShieldAlt, FaLock, FaUserSecret } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiJavascript, SiKalilinux } from "react-icons/si";
 
 const experiences = [
   {
@@ -26,6 +26,16 @@ const experiences = [
     icons: [<SiNextdotjs key="next" size={24} color="#ffffff" />, <FaNodeJs key="node" size={24} color="#339933" />],
   },
   {
+    title: "Analista de Ciberseguridad",
+    company: "Orange Cyberdefense",
+    period: "2023 – 2025",
+    description: [
+      "Monitoreo de amenazas y respuesta a incidentes (SOC)",
+      "Análisis de vulnerabilidades y hardening de sistemas",
+    ],
+    icons: [<FaShieldAlt key="shield" size={24} color="#ff7900" />, <FaLock key="lock" size={24} color="#ffffff" />],
+  },
+  {
     title: "Full Stack",
     company: "TechSolutions MX",
     period: "2023 – 2025",
@@ -34,6 +44,16 @@ const experiences = [
       "Integración de APIs y bases de datos",
     ],
     icons: [<FaReact key="react" size={24} color="#61dafb" />, <FaNodeJs key="node" size={24} color="#339933" />],
+  },
+  {
+    title: "Especialista en Pentesting",
+    company: "Cybolt",
+    period: "2021 – 2023",
+    description: [
+      "Pruebas de penetración y hacking ético",
+      "Auditorías de seguridad ofensiva y remediación",
+    ],
+    icons: [<SiKalilinux key="kali" size={24} color="#557C94" />, <FaUserSecret key="secret" size={24} color="#ffffff" />],
   },
   {
     title: "Frontend",

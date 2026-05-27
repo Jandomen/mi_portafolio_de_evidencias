@@ -48,7 +48,7 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="text-cyan-400 font-medium mb-4 tracking-wider uppercase text-sm"
         >
-          Fullstack Developer
+          Fullstack Developer & Cybersecurity Specialist
         </motion.p>
         
         <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -57,8 +57,8 @@ export default function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl text-slate-400 mb-8 max-w-xl leading-relaxed">
-          Desarrollo soluciones digitales innovadoras y experiencias web fluidas. 
-          Combino creatividad y tecnología para transformar ideas en realidades funcionales.
+          Desarrollo soluciones digitales innovadoras y seguras. 
+          Especialista en desarrollo fullstack con sólida experiencia en ciberseguridad y hacking ético.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

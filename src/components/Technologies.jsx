@@ -4,14 +4,16 @@ import { motion } from "framer-motion";
 import {
   FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare,
   FaGitAlt, FaPython, FaDocker, FaPhp, FaVuejs, FaAngular,
-  FaSass, FaBootstrap, FaUnity
+  FaSass, FaBootstrap, FaUnity, FaShieldAlt, FaLock, FaNetworkWired
 } from "react-icons/fa";
 import {
   SiTypescript, SiNextdotjs, SiGo, SiTailwindcss, SiMongodb,
   SiMysql, SiPostgresql, SiExpress, SiPostman, SiPrisma,
   SiRedux, SiGraphql, SiFirebase, SiSupabase, SiVercel,
   SiNetlify, SiFigma, SiElectron, SiSocketdotio,
-  SiStripe, SiCloudflare, SiNginx, SiVite, SiRender
+  SiStripe, SiCloudflare, SiNginx, SiVite, SiRender,
+  SiKalilinux, SiMetasploit, SiWireshark, SiBurpsuite,
+  SiOwasp
 } from "react-icons/si";
 import { DiRedis as DiRedisIcon } from "react-icons/di";
 
@@ -20,11 +22,19 @@ const allTechs = [
   { name: "Next.js", icon: <SiNextdotjs size={28} color="#ffffff" /> },
   { name: "TypeScript", icon: <SiTypescript size={28} color="#3178c6" /> },
   { name: "JavaScript", icon: <FaJsSquare size={28} color="#f7df1e" /> },
+  { name: "Kali Linux", icon: <SiKalilinux size={28} color="#557C94" /> },
+  { name: "Metasploit", icon: <SiMetasploit size={28} color="#ff0000" /> },
+  { name: "Wireshark", icon: <SiWireshark size={28} color="#1679A7" /> },
+  { name: "Burp Suite", icon: <SiBurpsuite size={28} color="#ff6633" /> },
+  { name: "Nmap", icon: <FaNetworkWired size={28} color="#4bb1e4" /> },
+  { name: "OWASP", icon: <SiOwasp size={28} color="#ffffff" /> },
+  { name: "Pentesting", icon: <FaShieldAlt size={28} color="#ff7900" /> },
+  { name: "Hacking Ético", icon: <FaLock size={28} color="#ffffff" /> },
+  { name: "Node.js", icon: <FaNodeJs size={28} color="#339933" /> },
   { name: "Vue.js", icon: <FaVuejs size={28} color="#42b883" /> },
   { name: "Angular", icon: <FaAngular size={28} color="#dd0031" /> },
   { name: "Vite", icon: <SiVite size={28} color="#646cff" /> },
   { name: "Electron", icon: <SiElectron size={28} color="#478cef" /> },
-  { name: "Node.js", icon: <FaNodeJs size={28} color="#339933" /> },
   { name: "Express", icon: <SiExpress size={28} color="#ffffff" /> },
   { name: "Python", icon: <FaPython size={28} color="#3776ab" /> },
   { name: "PHP", icon: <FaPhp size={28} color="#777bb4" /> },
@@ -54,6 +64,7 @@ const allTechs = [
   { name: "Nginx", icon: <SiNginx size={28} color="#009639" /> },
   { name: "Cloudflare", icon: <SiCloudflare size={28} color="#f38020" /> },
   { name: "Render", icon: <SiRender size={28} color="#46e3b7" /> },
+  { name: "Unity", icon: <FaUnity size={28} color="#ffffff" /> },
 ];
 
 export default function Technologies() {
