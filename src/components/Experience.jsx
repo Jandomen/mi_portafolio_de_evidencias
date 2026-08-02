@@ -6,16 +6,6 @@ import { SiNextdotjs, SiTailwindcss, SiJavascript, SiKalilinux } from "react-ico
 
 const experiences = [
   {
-    title: "Ingeniero de Software",
-    company: "Lumière Tech (Francia)",
-    period: "2026 – Presente",
-    description: [
-      "Desarrollo de plataformas web a nivel internacional",
-      "Arquitectura escalable y optimización de rendimiento",
-    ],
-    icons: [<SiNextdotjs key="next" size={24} color="#ffffff" />, <FaReact key="react" size={24} color="#61dafb" />],
-  },
-  {
     title: "Full Stack Jr.",
     company: "Codrava LP",
     period: "2025 – 2026",
