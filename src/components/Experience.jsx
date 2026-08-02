@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaReact, FaNodeJs, FaBriefcase, FaShieldAlt, FaLock, FaUserSecret } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaBriefcase, FaShieldAlt, FaLock, FaUserSecret, FaGamepad, FaDatabase } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiJavascript, SiKalilinux } from "react-icons/si";
 
 const experiences = [
@@ -24,6 +24,35 @@ const experiences = [
       "APIs REST y mejora de rendimiento (+30%)",
     ],
     icons: [<SiNextdotjs key="next" size={24} color="#ffffff" />, <FaNodeJs key="node" size={24} color="#339933" />],
+  },
+  {
+    title: "Software Engineer & Security Researcher",
+    company: "Commit",
+    period: "2024 – 2025",
+    description: [
+      "Desarrollo de software y plataformas web",
+      "Investigación y análisis de seguridad en aplicaciones",
+    ],
+    icons: [<FaReact key="react" size={24} color="#61dafb" />, <FaShieldAlt key="shield" size={24} color="#ff7900" />],
+  },
+  {
+    title: "Game Developer",
+    company: "CRH Talento en IT",
+    period: "2022 – 2024",
+    description: [
+      "Creación y desarrollo de un videojuego",
+    ],
+    icons: [<FaGamepad key="game" size={24} color="#ffffff" />, <FaReact key="react" size={24} color="#61dafb" />],
+  },
+  {
+    title: "Backend Developer",
+    company: "BairesDev",
+    period: "2021 – 2024",
+    description: [
+      "Desarrollo backend y diseño de APIs",
+      "Bases de datos y optimización de servicios",
+    ],
+    icons: [<FaDatabase key="db" size={24} color="#ffffff" />, <FaNodeJs key="node" size={24} color="#339933" />],
   },
   {
     title: "Analista de Ciberseguridad",
@@ -61,6 +90,16 @@ const experiences = [
     period: "2021 – 2023",
     description: [
       "Interfaces con React y Tailwind",
+    ],
+    icons: [<FaReact key="react" size={24} color="#61dafb" />, <SiTailwindcss key="tailwind" size={24} color="#38bdf8" />],
+  },
+  {
+    title: "Frontend Developer",
+    company: "mroads",
+    period: "2020 – 2023",
+    description: [
+      "Desarrollo de interfaces web",
+      "Implementación con React y Tailwind",
     ],
     icons: [<FaReact key="react" size={24} color="#61dafb" />, <SiTailwindcss key="tailwind" size={24} color="#38bdf8" />],
   },

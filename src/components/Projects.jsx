@@ -5,6 +5,13 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Jandosoft",
+    link: "https://jandosoft.vercel.app",
+    desc: "Suite de negocio cloud con IA, CRM y booking",
+    category: "Plataforma",
+    tech: ["Next.js", "React", "IA", "CRM"],
+  },
+  {
     title: "Jandochat",
     link: "https://jandochat.vercel.app",
     desc: "Chat en tiempo real",
@@ -114,6 +121,7 @@ const categoryColors = {
   Landing: { bg: "bg-cyan-500/10", border: "border-cyan-500/30", text: "text-cyan-400" },
   Logística: { bg: "bg-amber-500/10", border: "border-amber-500/30", text: "text-amber-400" },
   Juego: { bg: "bg-violet-500/10", border: "border-violet-500/30", text: "text-violet-400" },
+  Plataforma: { bg: "bg-teal-500/10", border: "border-teal-500/30", text: "text-teal-400" },
 };
 
 export default function Projects() {
