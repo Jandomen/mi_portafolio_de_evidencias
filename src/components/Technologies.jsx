@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import {
   FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare,
   FaGitAlt, FaPython, FaDocker, FaPhp, FaVuejs, FaAngular,
-  FaSass, FaBootstrap, FaUnity, FaShieldAlt, FaLock, FaNetworkWired
+  FaSass, FaBootstrap, FaUnity, FaShieldAlt, FaLock, FaNetworkWired,
+  FaJava
 } from "react-icons/fa";
 import {
   SiTypescript, SiNextdotjs, SiGo, SiTailwindcss, SiMongodb,
@@ -13,8 +14,10 @@ import {
   SiNetlify, SiFigma, SiElectron, SiSocketdotio,
   SiStripe, SiCloudflare, SiNginx, SiVite, SiRender,
   SiKalilinux, SiMetasploit, SiWireshark, SiBurpsuite,
-  SiOwasp
+  SiOwasp, SiC, SiCplusplus, SiKotlin, SiRust,
+  SiSpringboot, SiDotnet
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 import { DiRedis as DiRedisIcon } from "react-icons/di";
 
 const allTechs = [
@@ -37,8 +40,16 @@ const allTechs = [
   { name: "Electron", icon: <SiElectron size={28} color="#478cef" /> },
   { name: "Express", icon: <SiExpress size={28} color="#ffffff" /> },
   { name: "Python", icon: <FaPython size={28} color="#3776ab" /> },
-  { name: "PHP", icon: <FaPhp size={28} color="#777bb4" /> },
+  { name: "Java", icon: <FaJava size={28} color="#f89820" /> },
+  { name: "C", icon: <SiC size={28} color="#a8b9cc" /> },
+  { name: "C++", icon: <SiCplusplus size={28} color="#00599c" /> },
+  { name: "C#", icon: <TbBrandCSharp size={28} color="#239120" /> },
+  { name: "Kotlin", icon: <SiKotlin size={28} color="#7f52ff" /> },
+  { name: "Rust", icon: <SiRust size={28} color="#dea584" /> },
   { name: "Go", icon: <SiGo size={28} color="#00add8" /> },
+  { name: "Spring Boot", icon: <SiSpringboot size={28} color="#6db33f" /> },
+  { name: ".NET", icon: <SiDotnet size={28} color="#512bd4" /> },
+  { name: "PHP", icon: <FaPhp size={28} color="#777bb4" /> },
   { name: "HTML5", icon: <FaHtml5 size={28} color="#e34f26" /> },
   { name: "CSS3", icon: <FaCss3Alt size={28} color="#1572b6" /> },
   { name: "Sass", icon: <FaSass size={28} color="#cc6699" /> },

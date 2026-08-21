@@ -12,13 +12,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Portafolio_Alejandro_Serrano_Teran",
-  description: "Portfolio",
+  title: "Alejandro Serrano Teran | Fullstack Developer & Cybersecurity",
+  description:
+    "Portafolio de Alejandro Serrano Teran: desarrollador fullstack y especialista en ciberseguridad. Proyectos, experiencia y tecnologías.",
+  keywords: [
+    "Alejandro Serrano Teran",
+    "fullstack developer",
+    "ciberseguridad",
+    "portafolio",
+    "Next.js",
+    "React",
+  ],
+  authors: [{ name: "Alejandro Serrano Teran" }],
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

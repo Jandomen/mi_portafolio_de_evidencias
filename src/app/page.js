@@ -20,13 +20,9 @@ export default function Home() {
         <Experience />
       </section>
 
-      <section id="proyectos">
-        <Projects />
-      </section>
+      <Projects />
 
-      <section id="contacto">
-        <Footer />
-      </section>
+      <Footer />
 
       <ScrollButtons />
     </main>
